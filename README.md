@@ -12,6 +12,10 @@ liquid-svg 是一个水球进度百分比，支持三种主题色，蓝色、绿
 npm i vue2-liquid-svg
 ```
 
+## 版本
+
+vue3 版本，请使用 [liqiud-svg](https://www.npmjs.com/package/liquid-svg) 包
+
 ### 示例
 
 ```vue
