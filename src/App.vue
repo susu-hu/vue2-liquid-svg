@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="flex-row">
+      <LiquidSvg :data="50" :width="300" theme="blue" />
+      <LiquidSvg :data="50" :width="300" theme="green" />
+      <LiquidSvg :data="50" :width="300" theme="yellow" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// 本地
+// import LiquidSvg from "./package/LiquidSvg/index.vue";
+// npm
+import { LiquidSvg } from "vue2-liquid-svg";
+import "vue2-liquid-svg/liquid-svg.css";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { LiquidSvg },
+};
 </script>
 
 <style>
@@ -24,5 +28,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.flex-row {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 </style>
